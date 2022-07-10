@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+:root{
+    --naranja:#FF4301;
+    --rojo:#FF1E56;
+    --rojo-dos:#FF005C;
+    --blanco-puro:#FFFFFF;
+    --facebook:#3B44F6;
+    --linkelink:#1F4690;
+    --neon:#28DF99;
+
+
+    --blanco:#CFD2CF;
+    --font1: 'Fredoka One', cursive;
+    --font2: 'Michroma', sans-serif;
+  
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:  linear-gradient(rgba(5, 7, 12, 0.75),rgba(5,7,12, 0.75)), url(./images/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    background: rgba(12, 1, 1, 0.752);
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #CFD2CF;
+    font-weight: 10px;
+    
+    z-index: 30; 
+   
+    
+      
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    color:#bb2a5f;
+    font-family: var(--font2);
+
+}
+
+.icon_burguer{
+    cursor: pointer;
+    display: none;
+}
+
+/* .icon_burguer-show{
+    display: block;
+} */
+
+
+H1{
+    font-family: var(--font1);
+    font-size: 20px;
+    color: var(--rojo-dos);
+    position: relative;
+    
+}
+
+.portada_img{
+    background: rgba(163, 1, 71, 0.584);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 20;
+    position:relative;
+    
+   
+}
+
+.portada_img img {
+    width: 280px;
+    padding: 1em;
+    top: 2em;
+    border-radius: 100%;
+    transition: top 1s;
+    position: absolute; 
+    
+}
+
+.portada_img:hover img{
+    top: 0;
+}
+
+.botones{
+    padding: 0.6em;
+    margin: 1em;
+    width: 550px;
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+.botones h3{
+    color: #FFFFFF;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:hover{
+    opacity: 80%;
+    transition: 1s;
+}
+
+.btn_icon{
+    width: 30%;
+    height: 100%;
+    padding: 0.2em;
+    
+}
+
+button:nth-child(1){
+    background-color:var(--neon);
+
+}
+button:nth-child(2){
+    background-color:var(--neon);
+}
+button:nth-child(3){
+    background-color:var(--neon);
+    
+}
+
+.portfolios{
+    padding: 1em;
+    display: grid;
+    gap:1em;
+    grid-auto-rows: 600px;
+
+}
+
+.portfolio{
+    padding: 1em;
+    border-radius: 1em;
+    background: rgba(249, 249, 249, 0.855);
+}
+
+.portfolio_img{
+    width: 100%;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.portfolio_img img{
+    width: 100%;
+    height: 100%;  
+}
+
+.porfolio-info{
+    text-align: center;
+   
+}
+
+.Portfolio_info-title{
+    font-family: var(--font1);
+    padding-bottom: 1em;
+}
+
+.Portfolio_info-text{
+    font-family: var(--font2);
+    
+}
+
+
+    
+.Contacto{
+    height: 100px;   
+    display: flex;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media(max-width:599px){
+    .icon_burguer-show{
+        display: block;
+    }
+
+     nav ul{
+       background-color: rgb(48, 3, 3, 0.7);
+       position: absolute;
+       top: 70px;
+       width: 40%;
+       right: 10px;   
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 1em 0;
+
+       transition: margin-top 0.5s;
+       margin-top: -100%;
+    }
+
+    .show_menu{
+        margin-top: 0;
+        z-index: 10;
+    }
+
+
+}
+
+@media(min-width:600px){
+    .portfolios{
+        grid-template-columns: 1fr 1fr;
+    }
+    H1{
+        font-family: var(--font1);
+        font-size: 30px;
+        color: #CFD2CF;
+    }
+
+    .icon_burguer-show{
+        display: none;
+    }
+}
+
+@media(min-width:900px){
+    .portfolios{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    H1{
+        font-family: var(--font1);
+        font-size: 40px;
+        color: #CFD2CF;
+    }
+}
+
+@media(min-width:1200px){
+    .portfolios{
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       align-self: center;
+    }
+    H1{
+        font-family: var(--font1);
+        font-size: 50px;
+        color: #CFD2CF;
+    }
+
+
+    .botones{
+        padding: 0.6em;
+        margin: 1em;
+        width: 100%;
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        width: 200px;
+    }
+
+}
+
