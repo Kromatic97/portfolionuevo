@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 :root{
     --naranja:#FF4301;
-    --rojo:#FF1E56;
+    --rojo:#ff1e5625;
     --rojo-dos:#FF005C;
     --blanco-puro:#FFFFFF;
-    --facebook:#3B44F6;
+    --facebook:#3b44f654;
     --linkelink:#1F4690;
-    --neon:#28DF99;
+    --neon:#0ac2fa34;
 
 
     --blanco:#CFD2CF;
@@ -106,6 +106,13 @@ H1{
     top: 0;
 }
 
+.iconologo{
+width: 150px;
+}
+.btn_icon{
+width: 100%;
+}
+
 .botones{
     padding: 0.6em;
     margin: 1em;
@@ -119,22 +126,29 @@ H1{
     color: #FFFFFF;
 }
 
+
+
 button{
-    width: 150px;
-    height: 50px;
-    padding: 0.5em;
-    border-radius: 1.5em;
+    width: 100px;
+        
+    border-radius: 1em;
     border: none;
-    overflow: hidden;
+   
     display: flex;
+    flex-direction: column;
     gap: 1em;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    transition: all 1s;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
 }
 
 button:hover{
-    opacity: 80%;
-    transition: 1s;
+    opacity: 70%;
+   
+    
 }
 
 .btn_icon{
@@ -145,14 +159,18 @@ button:hover{
 }
 
 button:nth-child(1){
-    background-color:var(--neon);
+  background-color: var(--facebook);
+  color: #FFFFFF;
 
 }
 button:nth-child(2){
-    background-color:var(--neon);
+background-color: var(--rojo);
+  color: #FFFFFF;
+
 }
 button:nth-child(3){
-    background-color:var(--neon);
+    background-color: var(--neon)
+   
     
 }
 
@@ -233,6 +251,22 @@ button:nth-child(3){
     }
 
 
+}
+
+li{
+    list-style: none;
+}
+.ul_certificaciones{
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.ul_Lenguajes{
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 @media(min-width:600px){
