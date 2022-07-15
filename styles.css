@@ -95,12 +95,13 @@ H1{
 }
 
 .portada_img img {
-    width: 280px;
+    max-width: 100%;
     padding: 1em;
-    top: 2em;
+    top: 1em;
     border-radius: 100%;
     transition: top 1s;
     position: absolute; 
+    height: 300px;
     
 }
 
