@@ -29,6 +29,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
+    margin-top: 100px;
 }
 
 nav{
@@ -45,6 +46,7 @@ nav{
     font-weight: 10px;
     
     z-index: 30; 
+   
    
     
       
@@ -124,6 +126,16 @@ width: 100%;
 }
 .botones h3{
     color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    text-decoration: none;
+    color:var(--rojo-dos)
 }
 
 
@@ -323,3 +335,9 @@ li{
 
 }
 
+.contacto{
+    color: #CFD2CF;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
